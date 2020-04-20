@@ -1,0 +1,274 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --text-primary: #111111;
+  --text-secondary: #5e5e5e;
+  --color-accent: rgb(188, 22, 230);
+  --color-offwhite: rgb(252, 252, 252);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+  display: flex;
+  background-color: var(--color-offwhite);
+  height: 5rem;
+  padding: 1rem 15rem;
+}
+  .nav-left {
+    display: flex;
+    float: left;
+  }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wordmark {
+      width: 12rem;
+    }
+    .nav-links {
+      display: flex;
+      margin-left: 4rem;
+      justify-content: center;
+      align-items: center;
+    }
+      .nav-link {
+        display: flex;
+        margin-right: 2.2rem;
+        padding: 3px 10px;
+        border-radius: 6px;
+      }
+      .nav-link a {
+        color: var(--text-secondary);
+        font-weight: 400;
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        background-color: rgb(240, 240, 240);
+        cursor: pointer;
+      }
+  .center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .nav-right {
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* HERO STYLES */
+.hero {
+  display: flex;
+  background-color: var(--color-offwhite);
+  padding: 1rem 15rem;
+}
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    max-width: 70%;
+  }
+    .hero-h1 {
+      margin-bottom: 3rem;
+    }
+    .hero-h1 a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transform: all 200ms;
+    }
+      .hero-1 a:hover {
+        filter: brightness(1.2);
+      }
+    .btn-container {
+      max-width: 12rem;
+    }
+
+/* PRACTICES STYLES */
+.practices {
+  padding: 1rem 15rem;
+  background-color: var(--color-offwhite);
+}
+  .practices-h2 {
+    margin-top: 8rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+  }
+
+/* OUR TEAM STYLES */
+.team {
+  padding: 1rem 15rem;
+  background: var(--color-offwhite);
+}
+  .team-container {
+    margin-top: 2.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    place-self: center stretch;
+  }
+  .member-card {
+    display: flex;
+    justify-self: center;
+    min-width: 95%;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1.4rem 2rem;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 4px 12px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 4px 12px 0px rgba(50, 50, 50, 0.2);
+  }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .job-text {
+      font-size: .9em;
+      color: var(--text-secondary);
+    }
+    .member-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1.2rem;
+    }
+    .member-img img {
+      width: 72px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+/* "CONTACT US" STYLES */
+.contact {
+  padding: 1rem 15rem;
+  background-color: var(--color-offwhite);
+}
+  .contact-container {
+    display: flex;
+    background-color: red;
+    height: 100%;
+  }
+
+/* BUTTON STYLES */
+.btn-primary {
+  display: flex;
+  height: 2.55rem;
+  background-color: var(--color-accent);
+  padding: 0 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+}
+  .btn-primary a {
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 12px 18px 0px rgba(188, 22, 230, 0.3);
+    -moz-box-shadow:    0px 12px 18px 0px rgba(188, 22, 230, 0.3);
+    box-shadow:         0px 12px 18px 0px rgba(188, 22, 230, 0.3);
+  }
+
+/* TEXT STYLES */
+.heading-1 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #111111;
+}
+.heading-2 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  color: #111111;
+}
+.heading-3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #111111;
+}
+.card-heading {
+  margin-top: 1rem;
+  margin-bottom: .8rem;
+}
+
+.text-1 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.card-text {
+  font-size: 1.1rem;
+  color: #5e5e5e;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/* CARD STYLES */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  min-height: 22rem;
+  background-color: white;
+  padding: 1.8rem;
+  margin: 1rem;
+  justify-content: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 18px 30px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 18px 30px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 18px 30px 0px rgba(50, 50, 50, 0.3);
+  transition: all 250ms ease;
+}
+  .card-icon img {
+    width: 128px;
+    filter: invert(24%) sepia(82%) saturate(7500%) hue-rotate(285deg) brightness(100%) contrast(99%);
+  }
+  .card:hover {
+    transform: translateY(-15px);
+    -webkit-box-shadow: 0px 25px 40px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow:    0px 25px 40px 0px rgba(50, 50, 50, 0.45);
+    box-shadow:         0px 25px 40px 0px rgba(50, 50, 50, 0.45);
+  }
+
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(190, 57, 223);
+}

@@ -10,6 +10,10 @@
   --grad-factionsx: linear-gradient(243.48deg, rgb(255, 164, 57) 13.86%, rgb(255, 83, 83) 84.73%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
